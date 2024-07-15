@@ -145,6 +145,7 @@ header {
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s;
+    
 }
 
 .button-container button:hover {
@@ -157,8 +158,8 @@ header {
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    padding: 15px;
-    width: 80%;
+    padding: 10px;
+    width: 40%;
     margin: auto;
     background-color: #fff;
     border-radius: 50px;
@@ -414,6 +415,7 @@ footer {
     
     .button-container button {
         width: 100%; /* Full width buttons on smaller screens */
+        
     }
 }
 body {
@@ -614,58 +616,66 @@ footer {
     }
 
 }
-/* Button container styling */
-.button-container {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    flex-wrap: wrap; /* Allows buttons to wrap to the next line */
-    margin-top: 20px;
-    position: relative; /* Position relative to ensure z-index works */
-    z-index: 10; /* Higher than the footer */
-    transform: translateY(-20px); /* Move the button container up */
+/* Add this CSS for better alignment of input container and calculate button */
+.input-container {
+    padding: 20px;
+    text-align: center;
+    width: 80%;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
 }
 
-/* Button styling */
-.button-container button {
-    padding: 15px 20px;
+#calculate-button {
     background-color: #4CAF50;
     color: white;
     border: none;
-    border-radius: 5px;
+    padding: 10px 20px;
     cursor: pointer;
     font-size: 16px;
+    margin: 20px auto;
+    display: block;
     transition: background-color 0.3s;
-    margin-bottom: 10px; 
-    z-index: 1;/* Spacing between buttons */
 }
 
-.button-container button:hover {
+#calculate-button:hover {
     background-color: #45a049;
 }
 
-/* Responsive Design */
+/* Add media queries for responsiveness */
 @media (max-width: 768px) {
-    .button-container {
-        flex-direction: column;
-        align-items: center;
+    .input-container {
+        width: 90%;
     }
-    
-    .button-container button {
-        width: 100%; /* Full width buttons on smaller screens */
-        margin-bottom: 5px; /* Reduced spacing between buttons */
+
+    #calculate-button {
+        width: 100%;
+        padding: 15px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .input-container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    #calculate-button {
+        width: 100%;
+        padding: 15px;
+        font-size: 16px;
     }
 }
 @media (max-width: 768px) {
-    header {
-        padding-top: 60px; /* Adjust this value as necessary */
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
-    .menu-icon {
-        top: 20px; /* Adjust this value as necessary */
-    }
-
-    .side-menu {
-        top: 60px; /* Ensure this matches the padding-top of the header */
+    .menu button {
+        margin: 5px 0;
     }
 }
