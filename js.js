@@ -60,44 +60,44 @@ document.addEventListener("DOMContentLoaded", function () {
             if (params.course === 'theory') {
                 inputFields.innerHTML = `
                     <label for="ct1">Cycle Test 1 (25 Marks):</label>
-                    <input type="number" id="ct1" max="25" min="0" placeholder="Enter marks below 25" required>
+                    <input type="number" id="ct1" max="25" min="0" placeholder="Marks below 25" required>
                     <label for="ct2">Cycle Test 2 (50 Marks):</label>
-                    <input type="number" id="ct2" max="50" min="0" placeholder="Enter marks below 50" required>
+                    <input type="number" id="ct2" max="50" min="0" placeholder="Marks below 50" required>
                     <label for="ct3">Cycle Test 3 (50 Marks):</label>
-                    <input type="number" id="ct3" max="50" min="0" placeholder="Enter marks below 50" required>
+                    <input type="number" id="ct3" max="50" min="0" placeholder="Marks below 50" required>
                     <label for="ct4">Cycle Test 4 (10 Marks):</label>
-                    <input type="number" id="ct4" max="10" min="0" placeholder="Enter marks below 10" required>
+                    <input type="number" id="ct4" max="10" min="0" placeholder="Marks below 10" required>
                 `;
             } else if (params.course === 'joint') {
                 inputFields.innerHTML = `
                     <label for="ct1">Cycle Test 1 (10%):</label>
-                    <input type="number" id="ct1" max="10" min="0" placeholder="Enter percentage value below 10" required>
+                    <input type="number" id="ct1" max="10" min="0" placeholder="% below 10" required>
                     <label for="ct2">Cycle Test 2 (15%):</label>
-                    <input type="number" id="ct2" max="15" min="0" placeholder="Enter percentage value below 15" required>
+                    <input type="number" id="ct2" max="15" min="0" placeholder="% below 15" required>
                     <label for="ct3">Cycle Test 3 (15%):</label>
-                    <input type="number" id="ct3" max="15" min="0" placeholder="Enter percentage value below 15" required>
+                    <input type="number" id="ct3" max="15" min="0" placeholder="% below 15" required>
                     <label for="ct4">Cycle Test 4 (10%):</label>
-                    <input type="number" id="ct4" max="10" min="0" placeholder="Enter percentage value below 10" required>
+                    <input type="number" id="ct4" max="10" min="0" placeholder="% below 10" required>
                     <label for="practical-lab">Lab Practical (25%):</label>
-                    <input type="number" id="practical-lab" max="25" min="0" placeholder="Enter percentage value below 25" required>
+                    <input type="number" id="practical-lab" max="25" min="0" placeholder="% below 25" required>
                 `;
             }
         } else if (params.regulation === '2021') {
             if (params.course === 'theory') {
                 inputFields.innerHTML = `
                     <label for="ct1">Cycle Test 1 (50 Marks):</label>
-                    <input type="number" id="ct1" max="50" min="0" placeholder="Enter marks below 50" required>
+                    <input type="number" id="ct1" max="50" min="0" placeholder="Marks below 50" required>
                     <label for="ct2">Cycle Test 2 (50 Marks):</label>
-                    <input type="number" id="ct2" max="50" min="0" placeholder="Enter marks below 50" required>
+                    <input type="number" id="ct2" max="50" min="0" placeholder="Marks below 50" required>
                 `;
             } else if (params.course === 'joint') {
                 inputFields.innerHTML = `
                     <label for="ct1">Cycle Test 1 (30%):</label>
-                    <input type="number" id="ct1" max="30" min="0" placeholder="Enter percentage value below 30" required>
+                    <input type="number" id="ct1" max="30" min="0" placeholder="% below 30" required>
                     <label for="ct2">Cycle Test 2 (30%):</label>
-                    <input type="number" id="ct2" max="30" min="0" placeholder="Enter percentage value below 30" required>
+                    <input type="number" id="ct2" max="30" min="0" placeholder="% below 30" required>
                     <label for="practical">Practical (40%):</label>
-                    <input type="number" id="practical" max="40" min="0" placeholder="Enter percentage value below 40" required>
+                    <input type="number" id="practical" max="40" min="0" placeholder="% below 40" required>
                 `;
             }
         }
